@@ -7,6 +7,8 @@ $puzzle = $data['puzzle'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Rompecabezas</title>
     <link rel="stylesheet" href="./CSS/rompecabeza.css">
 </head>
@@ -34,8 +36,8 @@ $puzzle = $data['puzzle'];
     <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
 
 <div id="final-phrase" class="hidden">
-    <h2>¡Frase Final!</h2>
-    <p></p>
+    <h2>Para Mi Novia:</h2>
+    <h3></h3>
 </div>
 
 <script src="./rompecabeza.js"></script>

@@ -1,3 +1,4 @@
+
 let redirectUrl = ""; // Variable para almacenar la URL de redirección
 let expectedPassword = ""; // Variable para la contraseña esperada
 
@@ -22,22 +23,26 @@ function closeModal() {
 function validatePassword() {
     const password = document.getElementById("passwordInput").value;
 
-    if (password === expectedPassword) { // Verifica si la contraseña es correcta
+    if (password === expectedPassword) {
         markAsUnlocked(redirectUrl); // Marca la URL como desbloqueada
         window.location.href = redirectUrl; // Redirige si es correcta
     } else {
-        alert("Contraseña incorrecta. Intenta nuevamente."); // Muestra mensaje de error
+        // Reemplaza la alerta con SweetAlert2
+        Swal.fire({
+            icon: 'error',
+            title: 'Esa No Es La Frase Mi Amor',
+            text: 'Intenta nuevamente.',
+            confirmButtonText: 'Pos Ya Que',
+        });
     }
 }
 
 function isUnlocked(url) {
-    // Verifica si la URL ya está desbloqueada
     const unlockedUrls = JSON.parse(localStorage.getItem("unlockedUrls")) || [];
     return unlockedUrls.includes(url);
 }
 
 function markAsUnlocked(url) {
-    // Marca una URL como desbloqueada
     let unlockedUrls = JSON.parse(localStorage.getItem("unlockedUrls")) || [];
     if (!unlockedUrls.includes(url)) {
         unlockedUrls.push(url);

@@ -8,53 +8,52 @@
 </head>
 <style>
     .reglas {
-    background-color: rgba(255, 255, 255); 
-    color: #000000; 
-    padding: 20px;
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    margin: 20px auto; 
-    max-width: 600px; 
-    font-family: 'Arial', sans-serif; 
-    line-height: 1.6; 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    text-align: left;
-    overflow-y: auto;
-    max-height: 300px;
-}
+        background-color: rgba(255, 255, 255); 
+        color: #000000; 
+        padding: 20px;
+        border-radius: 10px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+        margin: 20px auto; 
+        max-width: 600px; 
+        font-family: 'Arial', sans-serif; 
+        line-height: 1.6; 
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: left;
+        overflow-y: auto;
+        max-height: 300px;
+    }
 
-/* Título de las reglas */
-.reglas h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #f0f0f0; /* Color ligeramente más claro */
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Separador */
-    padding-bottom: 10px;
-    color: #000000;
-}
+    /* Título de las reglas */
+    .reglas h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #f0f0f0; /* Color ligeramente más claro */
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Separador */
+        padding-bottom: 10px;
+        color: #000000;
+    }
 
-/* Lista de reglas */
-.reglas ul {
-    list-style: inside square; /* Viñetas cuadradas */
-    padding: 0;
-}
+    /* Lista de reglas */
+    .reglas ul {
+        list-style: inside square; /* Viñetas cuadradas */
+        padding: 0;
+    }
 
-.reglas ul li {
-    margin-bottom: 10px; /* Espacio entre reglas */
-    padding: 5px 10px; /* Espaciado interno */
-    background-color: rgba(255, 255, 255, 0.05); /* Fondo tenue para cada regla */
-    border-radius: 5px; /* Bordes redondeados para reglas */
-    transition: transform 0.2s, background-color 0.3s;
-}
+    .reglas ul li {
+        margin-bottom: 10px; /* Espacio entre reglas */
+        padding: 5px 10px; /* Espaciado interno */
+        background-color: rgba(255, 255, 255, 0.05); /* Fondo tenue para cada regla */
+        border-radius: 5px; /* Bordes redondeados para reglas */
+        transition: transform 0.2s, background-color 0.3s;
+    }
 
-/* Hover en las reglas */
-.reglas ul li:hover {
-    background-color: rgba(255, 255, 255, 0.15); /* Fondo más brillante al pasar el cursor */
-    transform: scale(1.02); /* Pequeño efecto de zoom */
-}
-
+    /* Hover en las reglas */
+    .reglas ul li:hover {
+        background-color: rgba(255, 255, 255, 0.15); /* Fondo más brillante al pasar el cursor */
+        transform: scale(1.02); /* Pequeño efecto de zoom */
+    }
 </style>
 <body>
     <header>
@@ -62,28 +61,28 @@
     </header>
     <main class="intro">
         <p>
-            Esta página está hecha especialmente para ti, para recordarnos esos momentos mágicos que hemos vivido juntos, desde nustros inicios hasta nuestra actualidad ❤️ 
+            Esta página está hecha especialmente para ti, para recordarnos esos momentos mágicos que hemos vivido juntos, desde nuestros inicios hasta nuestra actualidad ❤️ 
         </p>
         <p>
             Espero que te guste y te haga sonreír tanto como a mí al crearla. 🥰
         </p>
     </main>
     <div class="reglas">
-    <h2>Reglas</h2>
-    <ul>
-        <li>Regla 1: Cada cuadro tiene un número, mismo que corrsponde a una carta.</li>
-        <li>Regla 2: Para acceder al contenido del cuadro, deberas poner una contraseña.</li>
-        <li>Regla 3: La contraseña será la respuesta a la pregunta de la carta fisica.</li>
-        <li>Regla 4: Cuando accedas al contenido de la carta, podrás ver un link a una canción de spotify.</li>
-        <li>Regla 5: Para el rompecabezas, te pedira una palabra secreta.</li>
-        <li>Regla 6: La palabra tambien esta en las cartas, deberás de escribirla en los recuadros del rompecabezas.</li>
-        <li>Regla 7: Al finalizar todos los  cuadros, revelarás la frase.</li>
-        <li>Por ejemplo, en el primer cuadro dale a Revelar, y escribe "Mi amor", es importante que las escribas tal cuál estan en las cartas.</li>
-
-
-    </ul>
-    <h1 style="text-align: center;">¡Suerte Mi Amor❤️!</h1>
-</div>
-<a href="timeline.php" class="btn">Ir a nuestra historia</a>
+        <h2>Reglas</h2>
+        <ul>
+            <li>Regla 1: Cada cuadro tiene un número, mismo que corresponde a una carta.</li>
+            <li>Regla 2: Para acceder al contenido del cuadro, deberás poner una contraseña.</li>
+            <li>Regla 3: La contraseña será la respuesta a la pregunta de la carta física.</li>
+            <li>Regla 4: Cuando accedas al contenido de la carta, podrás ver un link a una canción de Spotify.</li>
+            <li>Regla 5: Para el rompecabezas, te pedirá una palabra secreta.</li>
+            <li>Regla 6: La palabra es el título de alguna canción que se encuentra en la línea del tiempo. Tendrás que adivinar qué título va en cada cuadro.</li>
+            <li>Regla 7: Al finalizar todos los cuadros, revelarás la frase.</li>
+            <li>Por ejemplo, en el primer cuadro dale a Revelar, y escribe "Rest Of My Life", es importante que las escribas tal cual está en el título.</li>
+        </ul>
+        <h1 style="text-align: center;">¡Suerte Mi Amor❤️!</h1>
+    </div>
+    <a href="timeline.php" class="btn">Ir a nuestra historia</a> <br>
+    <a href="https://play.google.com/store/apps/details?id=com.spotify.music&pcampaignid=web_share" class="btn" download>Descargar Spotify</a>
+    <p>Puedes usar mis credenciales para tener el premium, solo mandame mensaje</p>
 </body>
 </html>

@@ -18,6 +18,7 @@ function closeModal() {
     modal.classList.add('hidden');
 }
 
+
 function normalizeText(text) {
     return text
         .toLowerCase()
@@ -34,9 +35,16 @@ function checkWord() {
         revealImage(currentIndex);
         closeModal();
     } else {
-        alert('Palabra incorrecta. Intenta de nuevo.');
+        // Usar SweetAlert2 para el mensaje de error
+        Swal.fire({
+            icon: 'error',
+            title: 'Esta No Es Pri',
+            text: 'Siguele buscando',
+            confirmButtonText: 'Simona La Mona',
+        });
     }
 }
+
 
 function revealImage(index) {
     const piece = document.getElementById(`piece-${index}`);
@@ -74,16 +82,32 @@ function loadProgress() {
 
 function checkCompletion() {
     const hiddenButtons = document.querySelectorAll('.puzzle-piece button:not([style*="display: none"])');
+    
     if (hiddenButtons.length === 0) {
         const finalPhrase = document.getElementById('final-phrase');
-        finalPhrase.classList.remove('hidden');
-        finalPhrase.querySelector('p').textContent =
-            "El sol da luz a la vida bajo el cielo, el mar y las flores.";
+        
+        if (finalPhrase) {
+            finalPhrase.classList.remove('hidden');
+            finalPhrase.querySelector('h3').innerHTML =
+                "No hay palabra en el mundo que puedan expresar todo lo que siento por ti,<br>" +
+                "no existen imágenes que lo describan,<br>" +
+                "o poemas que plasmen ese sentimiento;<br>" +
+                "lo más cercano a ello son los hechos,<br>" +
+                "y yo cada día trabajaré duro para demostrarte cuánto te amo. <br><br><br><br>" + 
+                '<h2>Aquí te dejo la Playlist con las canciones 💓</h2>' +
+                '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4lqhlTZPGZWCbIltmQ0Yox?utm_source=generator&autoplay=1" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
 
-        // Llamar a la función de animación de confeti
-        launchConfetti();
+            // Llamar a la función de animación de confeti
+            launchConfetti();
+        } else {
+            console.error('Elemento con id "final-phrase" no encontrado.');
+        }
     }
 }
+
+
+
+
 
 // Función para lanzar el confeti
 // Función para lanzar el confeti

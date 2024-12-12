@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestra Línea del Tiempo</title>
     <script src="contraseña.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="./CSS/timeline.css">
 </head>
 <style>
@@ -107,7 +109,7 @@
         <div class="event-content">
             <h2>9/Oct/2018</h2>
             <p>Cuando nos conocimos.</p>
-            <button class="btn" onclick="openModal('evnt1.php', '1234')">Leer</button>
+            <button class="btn" onclick="openModal('evnt1.php', 'Mi Amor')">Leer</button>
         </div>
     </div>
 
@@ -120,7 +122,7 @@
     <div class="event-content">
         <h2>15/11/2020</h2>
         <p>Primera vez que fuí a verte a tu casa.</p>
-        <button class="btn" onclick="openModal('evnt2.php', '1234')">Leer</button>
+        <button class="btn" onclick="openModal('evnt2.php', 'Mi Vida')">Leer</button>
     </div>
 </div>
         <!-- Evento 3 -->
@@ -130,7 +132,7 @@
             <div class="event-content">
                 <h2>19/12/2020</h2>
                 <p>Cuando me empezaste a gustar.</p>
-                <button class="btn" onclick="openModal('evnt3.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt3.php', 'Mi Cielo')">Leer</button>
             </div>
         </div>
 
@@ -141,7 +143,7 @@
             <div class="event-content">
                 <h2>14/02/2021</h2>
                 <p>Nuestro primer “Te amo”.</p>
-                <button class="btn" onclick="openModal('evnt4.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt4.php', 'Mi Niña')">Leer</button>
             </div>
         </div>
 
@@ -152,7 +154,7 @@
             <div class="event-content">
                 <h2>22/05/2021</h2>
                 <p>Sentimientos correspondidos.</p>
-                <button class="btn" onclick="openModal('evnt5.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt5.php', 'Cariño')">Leer</button>
             </div>
         </div>
 
@@ -163,7 +165,7 @@
             <div class="event-content">
                 <h2>20/06/2021</h2>
                 <p>Primera vez que salimos.</p>
-                <button class="btn" onclick="openModal('evnt6.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt6.php', 'Bebé')">Leer</button>
             </div>
         </div>
 
@@ -174,7 +176,7 @@
             <div class="event-content">
                 <h2>03/07/2021</h2>
                 <p>Nuestro primer día de novios.</p>
-                <button class="btn" onclick="openModal('evnt7.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt7.php', 'Hermosa')">Leer</button>
             </div>
         </div>
 
@@ -185,7 +187,7 @@
             <div class="event-content">
                 <h2>17/09/2021</h2>
                 <p>Nuestro primer beso.</p>
-                <button class="btn" onclick="openModal('evnt8.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt8.php', 'Dulzura')">Leer</button>
             </div>
         </div>
 
@@ -196,7 +198,7 @@
             <div class="event-content">
                 <h2>25/12/2021</h2>
                 <p>Nuestra primera navidad.</p>
-                <button class="btn" onclick="openModal('evnt9.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt9.php', 'Mi Princesa')">Leer</button>
             </div>
         </div>
 
@@ -207,7 +209,7 @@
             <div class="event-content">
                 <h2>03/07/2022</h2>
                 <p>Un año de novios.</p>
-                <button class="btn" onclick="openModal('evnt10.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt10.php', 'Mami')">Leer</button>
             </div>
         </div>
 
@@ -218,7 +220,7 @@
             <div class="event-content">
                 <h2>15/07/2022</h2>
                 <p>Cumplimos un logro en la escuela.</p>
-                <button class="btn" onclick="openModal('evnt11.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt11.php', 'Mi Reina')">Leer</button>
             </div>
         </div>
 
@@ -229,7 +231,7 @@
             <div class="event-content">
                 <h2>21/01/2023</h2>
                 <p>Primera vez en Guadalajara.</p>
-                <button class="btn" onclick="openModal('evnt12.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt12.php', 'Bonita')">Leer</button>
             </div>
         </div>
 
@@ -240,7 +242,7 @@
             <div class="event-content">
                 <h2>02/07/2023</h2>
                 <p>Fuimos a la playa.</p>
-                <button class="btn" onclick="openModal('evnt13.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt13.php', 'Linda')">Leer</button>
             </div>
         </div>
 
@@ -251,7 +253,7 @@
             <div class="event-content">
                 <h2>03/07/2024</h2>
                 <p>3 años de novios.</p>
-                <button class="btn" onclick="openModal('evnt14.php', '1234')">Leer</button>
+                <button class="btn" onclick="openModal('evnt14.php', 'Guapa')">Leer</button>
             </div>
         </div>
 
@@ -261,8 +263,8 @@
             <img src="./IMG/evnt15.png" alt="3 años de novios">
             <div class="event-content">
             <h2>25/12/2024</h2>
-            <p>Nuestra cuarta navidad juntos.</p>
-                <button class="btn" onclick="openModal('evnt15.php', '1234')">Leer</button>  
+            <p>Nuestro 4to año nuevo juntos.</p>
+                <button class="btn" onclick="openModal('evnt15.php', 'Esposa Mía')">Leer</button>  
             </div>
         </div>
         <div class="confetti"></div>
@@ -272,7 +274,7 @@
     <div class="modal" id="passwordModal">
     <div class="modal-content">
         <h3>Ingresa la contraseña</h3>
-        <input type="password" id="passwordInput" placeholder="Contraseña">
+        <input type="text" id="passwordInput" placeholder="Contraseña">
         <button onclick="validatePassword()">Acceder</button>
         <button class="close-btn" onclick="closeModal()">Cancelar</button>
     </div>
